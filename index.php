@@ -1,6 +1,7 @@
 <?php
 
 echo 'hello world';
-$aa
-
+$aa;
+$bb;
+$cc;
 ?>
