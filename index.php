@@ -1,24 +1,22 @@
 <?php
-
-//宣告一個變數
-$a=1;
+//運算子 !
+$a=true;
 echo $a;
-echo "<br>";
-$a=2.1;
-echo $a;
-echo "<br>";
-print($a);
-echo "<br>";
-
-$studentInSchool="YES";
+echo "<hr>";
+echo !$a;
 
 
-/*
-宣告一個常數
-常數不可被變更
-*/
-define("PI",3.1415927);
-echo PI;
-echo PI*2*10;
+//運算子 ++  => $b=$b+1;
+echo "<hr>";
+$b=1;
+echo $b++;
+echo "<hr>";
+echo $b+1;
 
+echo "<hr>";
+//算術運算子 + ,- ,* ,/
+
+$a=2;
+$b=5;
+echo $a+$b;
 ?>
