@@ -2,6 +2,7 @@
 
 *{
     font-family:"Courier New";
+    line-height:10px;
 }
 </style>
 
@@ -121,6 +122,58 @@ for($i=0;$i<9;$i++){
     echo "<br>";
 
 }
+
+
+//矩形
+echo "<hr>";
+for($i=0;$i<5;$i++){
+
+    if($i==0 || $i==4){
+        
+        for($j=0;$j<5;$j++){
+            echo "*";
+        }
+        
+    }else{
+
+        for($k=0;$k<5;$k++){
+            if($k==0 || $k==4){
+                echo "*";
+            }else{
+                echo "&nbsp;";
+            }
+        }
+    }
+
+    echo "<br>";
+}
+//矩形
+echo "<hr>";
+
+$x=20;
+
+for($i=0;$i<$x;$i++){
+
+    if($i==0 || $i==($x-1)){
+        
+        for($j=0;$j<$x;$j++){
+            echo "*";
+        }
+        
+    }else{
+
+        for($k=0;$k<$x;$k++){
+            if($k==0 || $k==($x-1) || $k==$i || $k==($x-$i-1)){
+                echo "*";
+            }else{
+                echo "&nbsp;";
+            }
+        }
+    }
+
+    echo "<br>";
+}
+
 ?>
 
 <!-- &nbsp;&nbsp;&nbsp;&nbsp;*<br>
