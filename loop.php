@@ -1,3 +1,21 @@
+<style>
+table{
+    border:1px solid #999;
+    padding:10px;
+}
+
+table td{
+    padding:5px;
+    text-align:center;
+    border:1px solid #ccc;
+}
+table tr:nth-child(1),
+table td:nth-child(1){
+    background:#bbb;
+}
+
+</style>
+
 <?php
 
 //for loop
@@ -19,110 +37,29 @@ for($i=1;$i<=9;$i=$i+1){
 
 echo "</table>";
 
+echo "<hr>";
+
+
+echo "<table border='1'>";
+for($i=0;$i<10;$i=$i+1){
+    //判斷第一列第一格是否要空白
+    if($i==0){
+        echo "<tr><td></td>";
+    }else{
+        echo "<tr><td>".$i."</td>";
+    }
+    for($j=1;$j<=9;$j++){
+        //判斷第一列如何呈現
+        if($i==0){
+            echo "<td>" . $j ."</td>";
+        }else {
+            echo "<td>" . ($i * $j) ."</td>";
+        }
+    }
+    echo "</tr>";
+}
+echo "</table>";
+
 
 ?>
 
-table *1
-tr *9
-td*81 => 9 *9 
-<table border=1>
-    <tr>
-        <td>1 x 1 = 10</td>
-        <td>2 x 1 = 10</td>
-        <td>3 x 1 = 10</td>
-        <td>4 x 1 = 10</td>
-        <td>5 x 1 = 10</td>
-        <td>6 x 1 = 10</td>
-        <td>7 x 1 = 10</td>
-        <td>8 x 1 = 10</td>
-        <td>9 x 1 = 10</td>
-    </tr>
-    <tr>
-    <td>1 x 1 = 10</td>
-        <td>2 x 1 = 10</td>
-        <td>3 x 1 = 10</td>
-        <td>4 x 1 = 10</td>
-        <td>5 x 1 = 10</td>
-        <td>6 x 1 = 10</td>
-        <td>7 x 1 = 10</td>
-        <td>8 x 1 = 10</td>
-        <td>9 x 1 = 10</td>
-    </tr>
-    <tr>
-    <td>1 x 1 = 10</td>
-        <td>2 x 1 = 10</td>
-        <td>3 x 1 = 10</td>
-        <td>4 x 1 = 10</td>
-        <td>5 x 1 = 10</td>
-        <td>6 x 1 = 10</td>
-        <td>7 x 1 = 10</td>
-        <td>8 x 1 = 10</td>
-        <td>9 x 1 = 10</td>
-    </tr>
-    <tr>
-    <td>1 x 1 = 10</td>
-        <td>2 x 1 = 10</td>
-        <td>3 x 1 = 10</td>
-        <td>4 x 1 = 10</td>
-        <td>5 x 1 = 10</td>
-        <td>6 x 1 = 10</td>
-        <td>7 x 1 = 10</td>
-        <td>8 x 1 = 10</td>
-        <td>9 x 1 = 10</td>
-    </tr>
-    <tr>
-    <td>1 x 1 = 10</td>
-        <td>2 x 1 = 10</td>
-        <td>3 x 1 = 10</td>
-        <td>4 x 1 = 10</td>
-        <td>5 x 1 = 10</td>
-        <td>6 x 1 = 10</td>
-        <td>7 x 1 = 10</td>
-        <td>8 x 1 = 10</td>
-        <td>9 x 1 = 10</td>
-    </tr>
-    <tr>
-    <td>1 x 1 = 10</td>
-        <td>2 x 1 = 10</td>
-        <td>3 x 1 = 10</td>
-        <td>4 x 1 = 10</td>
-        <td>5 x 1 = 10</td>
-        <td>6 x 1 = 10</td>
-        <td>7 x 1 = 10</td>
-        <td>8 x 1 = 10</td>
-        <td>9 x 1 = 10</td>
-    </tr>
-    <tr>
-    <td>1 x 1 = 10</td>
-        <td>2 x 1 = 10</td>
-        <td>3 x 1 = 10</td>
-        <td>4 x 1 = 10</td>
-        <td>5 x 1 = 10</td>
-        <td>6 x 1 = 10</td>
-        <td>7 x 1 = 10</td>
-        <td>8 x 1 = 10</td>
-        <td>9 x 1 = 10</td>
-    </tr>
-    <tr>
-    <td>1 x 1 = 10</td>
-        <td>2 x 1 = 10</td>
-        <td>3 x 1 = 10</td>
-        <td>4 x 1 = 10</td>
-        <td>5 x 1 = 10</td>
-        <td>6 x 1 = 10</td>
-        <td>7 x 1 = 10</td>
-        <td>8 x 1 = 10</td>
-        <td>9 x 1 = 10</td>
-    </tr>
-    <tr>
-    <td>1 x 1 = 10</td>
-        <td>2 x 1 = 10</td>
-        <td>3 x 1 = 10</td>
-        <td>4 x 1 = 10</td>
-        <td>5 x 1 = 10</td>
-        <td>6 x 1 = 10</td>
-        <td>7 x 1 = 10</td>
-        <td>8 x 1 = 10</td>
-        <td>9 x 1 = 10</td>
-    </tr>
-</table>
